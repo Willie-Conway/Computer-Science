@@ -2,8 +2,8 @@
  * Willie Conway
  * ConwayWillieHello.java
  * 
- *  Create jave file with LastNameFirstNameHello
- *  Create program that Printsline "Hello, World!"
+ *  Create a Java file with LastNameFirstNameHello
+ *  Creates program that Prints the line "Hello, World!"
  */
 
 public class ConwayWillieHello {
