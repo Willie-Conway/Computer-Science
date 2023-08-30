@@ -1,9 +1,11 @@
 
 /********************************************************************************
 * Willie Conway
-*  CWUnit3.java
+* CWUnit3.java
 *
-* This programs calculates savings, days to recoup cost and years to recoup cost.
+* This program reads solar energy production data for the last week from a file,
+* gets input for the cost of the system, and outputs production, savings, days
+* to recoup cost and years to recoup cost.
 ********************************************************************************/
 
 import java.util.Scanner;
