@@ -1,0 +1,118 @@
+<!--
+CS240 Web Programing I Unit III
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+   <meta charset="utf-8">
+   <meta name="author" content="Willie Conway">
+   <meta name="keywords" content="Homework, Animated">
+   <meta name="description" content="This is a web site about me doing homewaork with a .gif image.">
+   <title>It's Homework Time</title>
+<!--
+Uses style element to define 
+style information or CSS for
+the document.Covers many
+properties, id selectors and
+class selectors. 
+-->
+<style>
+   aside.monkey {
+   float: right;
+   border: none;
+   position: absolute;
+   right: 100px;
+   top: 450px;
+   bottom:100px;
+   }
+   p {
+   background-color: mediumaquamarine;
+   font-family: monospace;
+   color: black;
+   font-size: 17px;
+
+   }
+   body {background-color: mediumaquamarine;}
+   aside {
+   float: right;
+   width: 400px;
+   margin: 5px 10px;
+   border: 5px dashed;
+   color: white;
+   padding: 5px 10px;
+   }
+   h1 {
+   font-family: monospace;
+   font-size: 30px;
+   font-variant: small-caps;
+   border-left: 5px solid;width:350px;height:40px;
+   border-right: 5px solid;
+   border-color: white;background:gold;
+   color: maroon; 
+   }
+   h2 {
+   font-family: monospace;
+   font-size: 45px;
+   color:maroon;
+   border: 5px solid;background:gold;
+   border-color: white
+   }
+   img {
+   border: 7px dashed;
+   color: white; 
+   }
+
+</style>
+</head>
+<body>
+
+   <h1>It's HOMEWORK TIME</h1>
+<!--
+Use the aside element for the
+week 3 content. 
+-->
+   <aside>
+      <h2>WEEK #3</h2>
+      <p>
+         The first two weeks of class we're quite interesting. I feel like I'm
+         learning alot, even though it's only been two weeks. I can't wait 
+         to see what this week has to offer.
+      </p>
+   </aside>
+<!--
+End of week 3 aside tag.
+Use image element and src
+attribute to link the URL
+value to image, and define
+it by height and width 
+dimensions, using the style
+attribute. The alt attribute 
+defines the content of the image.
+-->
+   <img src="https://i.gifer.com/5eKX.gif" alt="Web Programmer" style="width:800px;height:600px;">
+<!--
+Beginning of aside element
+define with class attribute
+and monkey value.Use image
+element and src attribute to
+link the URL value to image,
+and define it by height and width 
+dimensions, using the style
+atribute. The alt attribute 
+defines the content of the image.
+-->
+<aside class="monkey">
+   <p>
+      Then again I'm like....
+   </p>
+   <img src="https://i.gifer.com/PDE.gif" alt="Monkey Programmer" style="width:450px;height:300px;">
+</aside>
+<!--
+End of aside class monkey.
+--> 
+</body>
+</html>
