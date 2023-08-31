@@ -1,0 +1,67 @@
+<!--
+  CS240 Web Programing I Unit I
+  Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+  Metadata pertaining the HTML document
+-->
+<meta charset="utf-8">
+<meta name="author" content="Willie Conway">
+<meta name="keywords" content="opacity, colors, rgba">
+<meta name="description" content="This is a web site about a opacity color scheme.">
+<meta http-equiv="refresh" content="30">
+<title>Opacity Color Scheme</title>
+<!--
+  Uses style element to define 
+  style information or CSS for
+  the document. An Hash # is 
+  being written in front of the
+  p1 through p6 id selectors to specify
+  or select the elements with a id p1
+  through p6. The background color
+  property is being used to specify
+  the rgba values, that are written with 
+  integers and a decimal for the opacity value.
+  The opacity value is clarifying that the 
+  transparent level is at 50%, which is 0.5
+  as a decimal.The semicolon is being included
+  after every value pair for declaration.
+-->
+<style>
+    #p1 {background-color:rgba(255,0,0,0.5);}
+    #p2 {background-color:rgba(0,255,0,0.5);}
+    #p3 {background-color:rgba(0,0,255,0.5);}
+    #p4 {background-color:rgba(192,192,192,0.5);}
+    #p5 {background-color:rgba(128,0,128,0.5);}
+    #p6 {background-color:rgba(255,165,0,0.5);}
+</style> 
+</head>
+<!--
+  Uses the body element to define the 
+  document's body, which displays all 
+  contents about the document, such as 
+  headings and paragraphs. The paragraph
+  element is used with the id attribute
+  to perform certain tasks for the element
+  that's holding the specific id value.
+  The id attribute is defining the p1
+  through p6 values, to select the following
+  colors pertaining to their rgba and opacity
+  values.
+-->
+<body>
+    <h1>Define Colors With RGBA</h1>
+
+    <p id="p1">Red</p>
+    <p id="p2">Green</p>
+    <p id="p3">Blue</p>
+    <p id="p4">Grey</p>
+    <p id="p5">Purple</p>
+    <p id="p6">Orange</p>
+
+</body>
+</html>

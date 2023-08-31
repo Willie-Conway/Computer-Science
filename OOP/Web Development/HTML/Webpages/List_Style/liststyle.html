@@ -1,0 +1,103 @@
+<!--
+CS240 Web Programing I Unit I
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+  Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="ordered list, unordered list, description list">
+    <meta name="description" content="This is a web site about a ordered, unordered, and description list.">
+    <meta http-equiv="refresh" content="30">
+    <title>Multi-List</title>
+<!--
+  Uses style element to define 
+  style information or CSS for
+  the document.Then uses the 
+  the the unordered, ordered,
+  and description list elements
+  with class selectors a,b,c,d to
+  define the class for whatever
+  list. The life-style-type
+  property is defining whatever
+  value is selected for whatever
+  list.
+-->
+<style>
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+dl.e {
+  list-style-type: none; 
+} 
+</style>
+</head>
+<!--
+  Uses the body element to define the 
+  document's body, which displays all 
+  contents about the document, such as 
+  lists and paragraphs. The paragraph
+  element is used for text or specify
+  The name of the list or what type of 
+  list is being defined. The list elements
+  are defining the class attribute to clarify
+  whatever value was selected above with 
+  the list element and class selector.
+-->
+<body>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Fruit Punch</li>
+  <li>Sweet Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Fruit Punch</li>
+  <li>Sweet Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Fruit Punch</li>
+  <li>Sweet Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Fruit Punch</li>
+  <li>Sweet Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<p>Example of description lists:</p>
+<dl class="e">
+  <dt>Fruit Punch</dt>
+  <dd>- red sweet drink</dd>
+  <dt>Sweet Tea</dt>
+  <dd>- dark brown sweet drink</dd>
+  <dt>Coca Cola</dt>
+  <dd>- dark brown acidic drink</dd>
+</dl>
+</body>
+</html>
