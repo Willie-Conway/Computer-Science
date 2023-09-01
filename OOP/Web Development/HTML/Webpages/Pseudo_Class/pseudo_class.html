@@ -1,0 +1,60 @@
+<!--
+CS240 Web Programing I Unit V
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+<meta charset="utf-8">
+<meta name="author" content="Willie Conway">
+<meta name="keywords" content=":first-child, :nth-child, pseudo-class selector">
+<meta name="description" content="This is a webpage about using :first-child and :nth-child pseudo-classes">
+<title>Pseudo Classes</title>
+<!-- 
+Uses style element to define 
+style information or CSS for
+the document.Covers :first-child
+and :nth-child pseudo-class selectors.
+and rules for the body element. 
+-->
+<style>
+/* 
+Sets all rules for paragraph :first-child
+pseudo-classes with itlaic text within
+this document.Rules require setting text
+color to blue.
+*/ 
+p:first-child i {
+color: blue;
+}
+/* 
+Sets all rules for paragraph :nth-child
+pseudo-classes with bold text in third paragraph,
+within this document.Rules require setting text
+color to red.
+*/ 
+p:nth-child(3) b {
+color: red;
+} 
+</style>
+</head>
+<!--
+Uses the body element to define the 
+document's body, which displays all 
+contents about the document, such as 
+bold text, italic text and paragraphs.
+Uses style attribute to set background-color
+to papayawhip. 
+-->
+<body style="background-color: papayawhip" >
+<!-- Selected :first-child paragraph element with italic text -->
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<!-- Selected :nth-child(3) paragraph element with bold text -->
+<p>I am a <b>strong</b> person. I am a <b>strong</b> person.</p>
+<p>I am a <b>strong</b> person. I am a <b>strong</b> person.</p>
+</body>
+</html>
