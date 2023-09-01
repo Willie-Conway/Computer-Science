@@ -1,0 +1,49 @@
+<!--
+CS240 Web Programing I Unit V
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+<meta charset="utf-8">
+<meta name="author" content="Willie Conway">
+<meta name="keywords" content="window object, location object, assign method">
+<meta name="description" content="This is a webpage about the location assign method in JavaScript, for window object.">
+<title>Location Assign Method</title>
+</head>
+<!-- Use style attribute and bakground color property value to change background-color to lightcoral. -->
+<body style="background-color: lightcoral;">
+<!-- Headers -->
+<h2>Location Assign Method</h2>
+
+<h3>The window.location object</h3>
+<!-- 
+Use input element to specify an input
+field where the user can enter data.The
+type attribute to specify a button for
+the value. Value atrribute to load the
+document. then a onclick event attribute
+to execute JavaScript when button is clicked. 
+-->
+<input type="button" value="Load new document" onclick="newDoc()">
+<!-- 
+Uses script element to embed
+JavaScript in the HTML document.
+-->
+<script>
+function newDoc() {
+/*
+Uses the assign method with the
+window.location object to loads a
+new document. This opens up in
+the location of www.ign.com.This
+is a URL address.
+*/
+window.location.assign("https://www.ign.com/")
+}
+</script>
+</body>
+</html>
