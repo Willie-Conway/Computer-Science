@@ -1,0 +1,37 @@
+<!--
+CS240 Web Programing I Unit VI
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="For loop, JavaScript">
+    <meta name="description" content="This is a webpage about using for loop. .">
+    <title>Creating a For loop in Javascript</title>
+</head>
+<body>
+<h1>My Favorite Fruits</h1>
+<!-- id attribute basket -->
+<p id="basket"></p>
+<!-- JavaScript -->
+<script>
+// Variable statements fruits, i, len, text. 
+   var fruits = ["Apple", "Orange", "Grapes", "Banana"];
+   var i = 0;
+   var len = fruits.length;
+   var text = "";
+// for loop prints name of fruits on a line, one by one as it breaks after a line.
+   for (; i < len; ) {
+   text += fruits[i] + "<br>";
+   i++;
+   }
+// identify value basket and calls text variable.
+   document.getElementById("basket").innerHTML = text;
+</script>
+</body>
+</html>
