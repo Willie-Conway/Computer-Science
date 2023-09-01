@@ -1,0 +1,33 @@
+<!--
+  CS240 Web Programing I Unit IV
+  Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="iframe, preload, autoplay">
+    <meta name="description" content="A web page about the difference between preload and autoplay.">
+    <title>Autoplay vs. Preload</title>
+</head>
+<body style="background-color: black;">
+
+   <h1 style="color: red;">Autoplay vs. Preload</h1>
+   <p style="color: aliceblue;"> 
+      The video on the left has autoplay setting and the video on the right has
+      preload "auto" settings.
+   </p>
+<!-- Autoplays the AngryBirds.mp4 video -->
+   <video width="500" height="500"  controls autoplay>
+   <source src="Angry_Birds.mp4" type="video/mp4">
+   </video>
+<!-- Preloads the AngryBirds.mp4 video -->
+   <video width="500" height="500" controls preload="auto">
+   <source src="Angry_Birds.mp4" type="video/mp4" >
+   </video>   
+</body>
+</html>
