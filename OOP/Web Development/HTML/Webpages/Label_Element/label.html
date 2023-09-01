@@ -1,0 +1,94 @@
+<!--
+  CS240 Web Programing I Unit V
+  Willie Conway
+  label.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content=":Voting, Registration, label element, form element ">
+    <meta name="description" content="This is a webpage about Voters Registration">
+    <title>Voters Registration</title>
+</head>
+<!--  
+  Uses style attribute  to define 
+  style information or CSS for
+  the document in body and h1 element.. 
+-->
+<body style="background: url(https://cdn5.vectorstock.com/i/1000x1000/59/14/voting-symbol-on-red-background-vector-11315914.jpg); align-content: center; background-repeat:no-repeat; background-size: 1500px 1000px;;">
+
+  <h1 style="font-size: 45px;">Voters Registration</h1>
+ 
+<!--  
+  Uses form element to define
+  a form that is used to collect
+  user input.The action attribute
+  specifies where to send the form-data
+  when a form is submitted. 
+-->
+<form action="./Voting.html">
+<!--  
+  Uses input to specify an input field
+  where the user can enter data.The for
+  attribute is specified with the label
+  element, the for attribute specifies
+  form element a label is bound to.
+  The radio buttons let a user select
+  only one of a limited number of choices.
+  The type attributes specify the type of button
+  and the id attribute specifies a unique id
+  for an HTML element. 
+-->
+<!-- Vote Registration -->
+  <p>Are you registered to vote:</p>
+  <input type="radio" id="yes" name="answer" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="answer" value="no">
+  <label for="no">No</label><br>
+  <input type="radio" id="maybe" name="answer" value="maybe">
+  <label for="maybe">Maybe</label>  
+<!--
+  line break
+ -->
+  <br>
+<!-- Education -->
+  <p>What's your highest level of education:</p>
+  <input type="radio" id="highschool" name="diploma" value="highschool">
+  <label for="highschool">High School Diploma</label><br>
+  <input type="radio" id="ged" name="diploma" value="ged">
+  <label for="ged">GED</label><br>
+  <input type="radio" id="college" name="diploma" value="college">
+  <label for="college">College</label>
+<!--
+  line break
+-->
+  <br>
+<!--  Race -->
+  <p>Please select your race:</p>
+  <input type="radio" id="white" name="race" value="white">
+  <label for="white">White</label><br>
+  <input type="radio" id="black" name="race" value="black">
+  <label for="black">Black</label><br>
+  <input type="radio" id="other" name="race" value="other">
+  <label for="other">Other</label>
+<!--
+  line break
+-->
+  <br>  
+<!-- Age -->
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
