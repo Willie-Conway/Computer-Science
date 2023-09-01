@@ -1,0 +1,34 @@
+<!--
+CS240 Web Programing I Unit IV
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="iframe, GIF, Computer Science, Attributes">
+    <meta name="description" content="This web page about opening href attribute in iframe element.">
+    <title>I Love Computer Science</title>
+</head>
+<body style="color: darkred;background-color: black;">
+    <h1> Time to Relax!!!!</h1>
+<!--
+Uses iframe element to act as a target
+for a link specified in the href value.This
+happens because the target of the link matches
+the name of the iframe.The name attribute specifies
+the name for the iframe.
+-->
+    <iframe src="https://i.gifer.com/8vv7.gif" name="iframe_a" width="400" height="300">
+    </iframe>
+    <a href="https://gifer.com/en/" target="iframe_a">Gifer.com
+    </a>
+    <p style="color: darkgreen;"><b>Note:</b> Because the target of the link
+       matches the name of the iframe, the link will open in the iframe.
+    </p>
+</body>
+</html>
