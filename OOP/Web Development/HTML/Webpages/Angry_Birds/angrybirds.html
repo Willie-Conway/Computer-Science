@@ -1,0 +1,109 @@
+<!--
+  CS240 Web Programing I Unit IV
+  Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="onmouseover, onmouseout, Angry Birds">
+    <meta name="description" content="This is a web page about how onmouseover and onmouseout are utilize in HTML.">
+    <title>Event-Handler Attributes</title>
+</head>
+<body style="color: darkred;">
+<!--
+  Uses The image element to
+  to embed the image of a angry
+  bird Graphics Interchange Format(GIF)
+  and uses even-handler attributes
+  onmouseover and onmouseout to create
+  a large image effect whenever the pointer
+  moves over the image and a regular
+  image effect whenever the pointer moves out
+  of the image. The image is specified with a
+  absolute path with a link to the source and 
+  a height and width of 32 X 32 pixels, and alt
+  providing alternative information
+  for the image.
+-->
+    <img onmouseover="LargeImg(this)" onmouseout="regularImg(this)" src="https://i.gifer.com/Yw8u.gif"
+     alt="AngryBird" width="32" height="32">
+    <p>
+       The function LargeImg() is triggered when the user mouse over the image. <br>
+       This function enlarges the image. This is a onmouseover effect, <br>
+       the onmouseover attribute is firing whenever the mouse pointer
+       moves over the element.
+    </p>
+    <p>
+       The function regularImg() is triggered when the mouse pointer is moved out of the
+       image. <br> That function sets the height and width of the image back to normal.
+       This is a onmouseout effect, <br>
+       the onmouseout attribute is firing whenever the mouse pointer moves
+       out of an element.
+    </p>
+<!--
+  Changes paragraph color to darkgreen.
+-->
+    <p style="color: darkgreen;">This example demonstrates how to assign an "onmouseover"
+       and "onmouseout" event to a h1 element.
+    </p>
+<!--
+  The h1 element is defined with a id
+  attribute with a value, to specify the
+  different functions in each of the
+  event-handlers for the h1 header.
+-->
+    <h1 id="game" onmouseover="mouseOver()" onmouseout="mouseOut()">Let's Play
+        Angry Birds
+    </h1>
+<!--
+  Uses the script element to embed
+  JavaScript code containing scripting
+  statements, which point to the external
+  script link or file through the src attribute.
+-->
+<script>
+/*
+  Uses the JavaScript function keyword to
+  define the block of code by name followed
+  by parameter x in parentheses to perform a
+  particular task. Defines the Large image and
+  regular image with parameter x, then executes
+  the code block within the curly braces or brackets
+  calling each function by the height and width in
+  pixels that was specified in the code block. The
+  height property sets or returns the height of an
+  element. The width property sets or returns
+  the width of an element. 
+*/
+   function LargeImg(x) {
+   x.style.height = "64px";
+   x.style.width = "64px";
+   }
+   function regularImg(x) {
+   x.style.height = "32px";
+   x.style.width = "32px";
+   }
+/*
+  For the h1 element specified with
+  the id attribute, the script element
+  uses the function keyword for JavaScript
+  to call the specified id value for the h1
+  element, by executing the code within the
+  curly braces or brackets, which are defining
+  the id value and the color for event-handler
+  effect's onmouseover and onmouseout.
+*/
+   function mouseOver() {
+   document.getElementById("game").style.color = "red";
+   }
+   function mouseOut() {
+   document.getElementById("game").style.color = "black";
+   }
+</script>
+</body>
+</html>
