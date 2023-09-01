@@ -1,0 +1,33 @@
+<!--
+CS240 Web Programing I Unit IV
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content="noscript, script, javaScript">
+    <meta name="description" content="This is a webpage about the noscript element.">
+    <title>Displaying the noscript element</title>
+</head>
+<body style="background-color: lightcoral;">
+   <h1>The noscript element</h1>
+   <p style="color: white;">
+      A browser with JavaScript disabled will show the text inside the noscript element ("Ready, Let's Go!" will not be displayed).
+   </p>
+<!-- Use Script element to enable JavaScript -->
+   <script>
+      document.write("Ready, Let's Go!")
+   </script>
+<!-- 
+Uses and enables nonscript element
+in case browser doesn't support JavaScript
+or it's disabled.
+-->
+   <noscript style="color: white;">Sorry, the browser that your using, does not support JavaScript!</noscript>
+</body>
+</html>
