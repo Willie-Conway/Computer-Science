@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   <h2>JavaScript Do/While Loop</h2>
+
+   <p id="loopy"></p>
+
+<script>
+   var text = ""
+   var i = 0;
+
+   do {
+   text += "<br>The number is " + i;
+   i++;
+   }
+   while (i < 30);
+
+   document.getElementById("loopy").innerHTML = text;
+</script>
+</body>
+</html>
