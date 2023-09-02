@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--------------------------------- DECK OF 52 CARDS ---------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+  <h2>DECK OF 52 CARDS</h2>
+
+  <p>The best way to loop through an array is using a standard for loop:</p>
+
+<!--------------------------------------- JavaScript ---------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+<script>
+// Global variables
+  var deck = []; // Declare variable statement deck equal to an empty array
+  var suits = ['C', 'D', 'H', 'S']; // Declare variable statement suits with array elements of "C, D, H, S"
+
+  function myDeck(cards) { // function myDeck with parameter cards to define the function
+/*
+Statement 1 sets a variable
+before the loop starts (var i=1).
+Statement 2 defines the condition
+for the loop to run (i must be less
+than or equal to 13).Statemnet 3
+increases a value (i++) each time
+the code block in the loop has been
+executed.
+*/
+  for(let i=1; i <= 13 ; i++){ // for loop is used to loop through the block of code a number of times
+/*
+Uses array variable deck
+to push and add each value
+to the array and return new
+length of array.
+*/
+   deck.push(i + cards); // Adds values "C, D, H, S" to empty array deck
+
+  } // end for loop
+} // end function
+/*
+The forEach() method calls
+a function once for each element
+in an array, in order.The function
+is not executed for array elements
+without values.
+*/
+suits.forEach(myDeck); // Uses forEach method to list every value in the var suits array
+// Writes the output to the console with "deck=" concatenated to the deck.
+console.log("deck = " + deck); 
+</script>
+</body>
+</html>

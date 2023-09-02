@@ -1,0 +1,116 @@
+<!--
+CS240 Web Programing I Unit V
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+<meta charset="utf-8">
+<meta name="author" content="Willie Conway">
+<meta name="keywords" content="Comparison Operators, Logic Operators">
+<meta name="description" content="This is a webpage about Comparison Operators and Logic Operators">
+<title>Comparison & Logic Operators</title>
+</head>
+
+<body style="background-color: beige;">
+<!-- Header --> 
+<h2>JavaScript Variables</h2>
+<p>Evaluate the following expressions. Show your work, using a separate line for each evaluation step.</p>
+<!-- Variables x and y -->
+<p>
+x = 15 <br>
+y = 4 <br>
+</p>
+<!-- Logic and Comparison Statements -->
+<p>
+a) 4 – x / 2 + y <br>
+b) x % 4 + 4 % x <br>
+c) 2 ** 3 / 2 * 3 <br>
+d) y != 0 && ! (y > 4 | | true) <br>
+</p>
+<!-- 
+Uses button element to create
+a clickable button, and onclick
+attribute to fireon a mouse click
+on the element, and defines the 
+myFunction() value.
+-->
+<button onclick="myFunction()">Try it</button>
+<!-- Uses id attribute to define value logic -->
+<p id="logic"></p>
+<!-- Uses script element to embed JavaScript -->
+<script>
+/*
+Uses function keyword to
+define the myFunction tasks.
+*/
+function myFunction() {
+/*
+Uses var statement to 
+create and declare variables.
+*/
+var x = 15;
+var y = 4;
+var a = 4 - x / 2 + y;
+var b = x % 4 + 4 % x;
+var c = 2 ** 3 / 2 * 3;
+var d = y != 0 && ! (y > 4 || true);
+/*
+Used getElementById() method to tell the HTML
+document to return the element that has the
+ID attribute with the specified value "logic".
+*/
+document.getElementById("logic").innerHTML =
+/*
+Uses division operator type
+to define the following statement
+*/
+"a)" + "\n&nbsp;\n" + " 4 - x / 2 + y = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 4 - (15) / 2 + (4) = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 4 - (15 / 2 ) + 4 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 4 - (7.5) + 4 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " -3.5 + 4 = " + "<br>"
++ "\n&nbsp; &nbsp; &nbsp;\n" + a + "<br>" +
+/*
+Uses Modulus division (Remainder)
+operator type to define the following
+statement
+*/ 
+"b)" + "\n&nbsp;\n" + " x % 4 + 4 % x = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (15) % 4 + 4 % (15) = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 15 /4 + 4 /15 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 4/15 + 15/4 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 15 - 12 + 4 - 0 " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 3 + 4 = " + "<br>"
++ "\n&nbsp; &nbsp; &nbsp;\n" + b + "<br>" +
+/*
+Uses exponentiation operator type
+to define the following statement
+*/
+"c)" + "\n&nbsp;\n" + " 2 ** 3 / 2 * 3 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 2^3 / 2 * 3 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 2 * 2 * 2 / 2 * 3 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 8 / 2 * 3 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (8 / 2) * 3 = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " 4 * 3 = " + "<br>"
++ "\n&nbsp; &nbsp; &nbsp;\n" + c + "<br>" +
+/*
+Uses equality, relational, grouping
+and logical operator type to define
+the following statement
+*/
+"d)" + "\n&nbsp;\n" + " y != 0 && ! (y > 4 || true) = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (4) != 0 && ! ((4)> 4 || true) = " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (4!=0 && !(4 > 4 || true) " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (4!=0) = true" + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (4 > 4) = false " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " (4!=0 && ! (4 > 4) = false " + "<br>"
++ "&nbsp; &nbsp; &nbsp;" + " false = " + "<br>"
++ "\n&nbsp; &nbsp; &nbsp;\n" + d + "<br>";
+}
+</script>
+</body>
+</html>

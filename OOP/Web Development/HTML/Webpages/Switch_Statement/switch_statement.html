@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- HEADER -->
+  <h2>The If Else If Statement</h2>
+
+  <p>Click the button to get a time-based greeting:</p>
+
+<!-- IF ELSE IF STATEMENT BUTTON -->
+  <button onclick="myStatement()">Try it</button>
+
+<!-- IDENTIFIER "statement" -->
+  <p id="statement"></p>
+
+<!------------------------------------------------------------------->
+<!------------------- "LET'S SWITCH IT UP" -------------------------->
+
+<!-- HEADER -->
+  <h2> The Switch Statement</h2>
+
+  <p>Click the button to get the day of the week:</p>
+
+<!-- SWITCH STATEMENT BUTTON -->
+  <button onclick="mySwitch()">Try it</button>
+
+<!-- IDENTIFIER "daysOfweek" -->
+  <p id="daysOfweek"></p>
+
+<!------------------------ JavaScript ------------------------------>
+<!------------------------------------------------------------------>
+<script>
+/*************************************************************/
+/******************* IF ELSE IF STATEMENT ********************/
+function myStatement() {
+// variable statement "greeting"
+ var greeting;
+// variable statement time equals new date and gets hours
+ var time = new Date().getHours();
+
+// If the current time (HOUR) is less than 10:00, output "Good morning" 
+ if (time < 10) {
+   greeting = "Good morning";
+// Else If the current time (HOUR) is less than 20:00, output "Good day"
+ } else if (time < 20) {
+   greeting = "Good day";
+// Else output "Good evening"
+ } else {
+   greeting = "Good evening";
+ }
+// Gets statement value form id attribute and selects greeting variable statement
+document.getElementById("statement").innerHTML = greeting;
+}
+/*************************************************************/
+/********************** SWITCH STATEMENT ********************/
+function mySwitch() {
+// variable statement "day"
+var day;
+// switch expression (gets new date and day) specified by case number 
+switch (new Date().getDay()) { 
+  case 0:
+    day = "Sunday"; // code block Sunday 
+    break;
+  case 1:
+    day = "Monday"; // code block Monday
+    break;
+  case 2:
+    day = "Tuesday"; // code block Tuesday
+    break;
+  case 3:
+    day = "Wednesday"; // code block Wednesday
+    break;
+  case 4:
+    day = "Thursday"; // code block Thursday
+    break;
+  case 5:
+    day = "Friday"; // code block Friday
+    break;
+  case 6:
+    day = "Saturday"; // code block Saturday
+}
+/* 
+Getting "daysOfWeek" id attribute value
+and concatenate "Today is" to the day
+that is selected in the switch statement.
+*/
+document.getElementById("daysOfweek").innerHTML = "Today is " + day;
+}
+</script>
+</body>
+</html>

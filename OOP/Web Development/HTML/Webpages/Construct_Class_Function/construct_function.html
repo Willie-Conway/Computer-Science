@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: red;">
+
+  <h2>JavaScript Class Car</h2>
+
+  <p>In this example we demonstrate a simple class definition and how to use it.</p>
+<!-- 
+id attribute is defining
+the carDealer value with
+the paragraph element.
+-->
+  <p id="carDealer"></p>
+
+<script>
+/* 
+Class heading is 
+defining the "Car"
+classname.
+*/
+class Car { // Class heading
+/* 
+Constructor heading or
+method is defining the (brand)
+parameter.
+*/
+  constructor(brand) { // Constructor heading
+/*
+Uses "this." to define
+carname property for the class.
+This refers to the object it
+belongs to. So, this.carname
+means the carname property of
+this "brand."
+*/
+    this.carname = brand; // Class body
+  }
+}
+/*
+Uses "mycar" to define
+to object for the class.
+Which then specifies the
+new keyword, to which is being 
+defined with the "Car" classname
+to create the single object,
+to define the ("Nissan") value as
+the the type of brand of car.
+*/
+mycar = new Car("Nissan");
+/*
+Tells the HTML document
+to get the element with the
+specified ID, which is the
+paragraph element that using
+the id attribute to define the
+carDealer value. Then uses the
+innerHTMl property to set or
+return the HTML content of the
+element. In this case we are
+retuning the object mycar and
+carname.
+*/
+document.getElementById("carDealer").innerHTML = mycar.carname;
+</script>
+</body>
+</html>
