@@ -1,0 +1,49 @@
+<!--
+CS240 Web Programing I Unit VI
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+    <meta charset="utf-8">
+    <meta name="author" content="Willie Conway">
+    <meta name="keywords" content=" for-loop, while-loop, factorial generator ">
+    <meta name="description" content="This is a webpage about generating factorial code for a user-entered number.">
+    <title>Factorial Generator</title>
+<script>
+// This function generates a factorial.
+
+   function generateFactorial(form) {
+   var num; // a user-entered number
+   var factorial; // factorial of num
+   var count; // multiplicand for factorial caculation
+
+   num = form.elements["number"].valueAsNumber;
+   factorial = 1;
+   count = 2;
+// while loop
+   while (count <=num) {
+   factorial *= count;
+   count++;
+}
+form.elements["result"].value = num + "! = " + factorial;
+} // end generateFactorial
+</script>
+</head>
+<body>
+   <form>
+   <label for="number">Enter a whole number:</label>
+   <input type="number" id="number"
+   min="0" max="15" step="1" required>
+   <br><br>
+   <input type="button" value="Generate Factorial"
+   onclick="generateFactorial(this.form);">
+   <br><br>
+   <output id="result"></output>
+   </form>
+</body>
+</html>
+

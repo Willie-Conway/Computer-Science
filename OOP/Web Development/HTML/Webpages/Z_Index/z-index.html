@@ -1,0 +1,104 @@
+<!--
+CS240 Web Programing I Unit VI
+Willie Conway
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Metadata pertaining the HTML document
+-->
+   <meta charset="utf-8">
+   <meta name="author" content="Willie Conway">
+   <meta name="keywords" content="Global Variables, JavaScript Scope, z-index property">
+   <meta name="description" content="This is a webpage about using z-index property and global variables. .">
+   <title>z-index property and global variables</title>
+</head>
+<!--
+Uses style element to define 
+style information or CSS for
+the document.Covers many
+properties and class selectors. 
+-->
+<style>
+/* Rules for h1 element class red. */
+   h1.red {
+   position: absolute;
+   } 
+/* Rules for img element class dance. */
+   img.dance {
+   position: absolute;
+   left: 250px;
+   top: 300px;
+   z-index: -2; /* z-index property with -2 places element in back of another element. */
+   margin: -100px;
+   padding: 100px;
+   }
+/* Rules for img element class suprise. */
+   img.suprise {
+   position: absolute;
+   left: -00px;
+   top: 0px;
+   z-index: 2; /* z-index property with 2 places element in front of another element. */
+   margin: 100px;
+   padding: 100px;
+   }
+/* Rules for h1 element class yellow. */
+   h1.yellow {
+   position: absolute;
+   margin: 150px;
+   left: -250px;
+   padding: 100px;
+   }
+</style>
+<body>
+<!-- 
+Uses class selector red
+with h1 element to identify
+properties used in CSS.
+-->
+   <h1 class="red">This Angry bird name is Red.</h1>
+<!-- 
+Uses class selector dance
+with img element to identify
+properties used in CSS.
+-->
+   <img class="dance" src="https://media0.giphy.com/media/H1Gnd91H1zzjslrf4B/giphy.gif" width="200" height="200">
+   <div> 
+<!-- 
+Uses class selector yellow
+with h1 element to identify
+properties used in CSS.
+-->
+   <h1 class="yellow">This Angry bird name is Chuck.</h1>
+<!-- 
+Uses class selector surprise
+with img element to identify
+properties used in CSS.
+-->
+   <img class="surprise" src="https://appstickers-cdn.appadvice.com/1152369033/818821938/fbcb6e7899e74fb5d1249497d5dbdcd5-8.gif" width="200" height="200">
+<!-- Uses id attribute to identify the value birds -->
+   <p id="birds"></p>
+   </div>
+<script>
+/* 
+variable AngryBirds is a global variable
+because the variable is declared
+outside the function.
+*/
+   var AngryBirds = "I'm a Angry Bird!!!"; 
+   angryFunction();
+/* 
+Uses function keyword
+to call function angryFunction()
+Then gets id value birds, to output
+"Hello, " and concatenate (add) the global
+variable AngryBirds.
+*/
+   function angryFunction() {
+   document.getElementById("birds").innerHTML = "Hello, " + AngryBirds.repeat(2); 
+//Uses repeat to repeat the global variable value.
+   } 
+</script>
+</body>
+</html>
