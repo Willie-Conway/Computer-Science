@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Text Baseline Examples</title>
+</head> 
+<body>
+
+<canvas id="myCanvas" width="800" height="200">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+/* 
+Gets canvas elemnet id myCanvas
+and define it as variable c.
+*/
+var c = document.getElementById("myCanvas");
+/* 
+Get 2 dimensional rendering
+context for canvas for variable
+c and define it as variable ctx
+*/
+var ctx = c.getContext("2d"); 
+/* 
+The strokeStyle property sets
+springgreen color returns the
+color, use for strokes */
+ctx.strokeStyle = "springgreen"; /* springgreen */
+ctx.beginPath(); // beginPath() begins specified path
+ctx.font = "25px Arial"; // font style set to Arial and font size set to 25 pixels
+
+/********************** Alphabetic Text Baseline **************************/
+/***********************************************************************/
+/* 
+The moveTo() method moves
+the path to the specified
+point in the canvas, without
+creating a line. */
+ctx.moveTo(1,40); // move position 1,40 for horizontal line y=40
+ctx.lineTo(539,40); // creates line to position 539,40 for horizontal line y=40
+ctx.stroke(); // stroke method draws path
+ctx.textAlign = "left"; // align text to the left
+ctx.textBaseline = "alphabetic"; // alhabetic text baseline value
+/* 
+Fill text
+set at x=10 and y= 40
+orgin.
+*/
+ctx.fillText("For this text, textBaseline=\"alphabetic\" & y=40.", 10, 40 );
+
+/********************** Bottom Text Baseline **************************/
+/***********************************************************************/ 
+ctx.moveTo(1,80); // move position 1,80 for horizontal line y=80
+ctx.lineTo(539,80); // creates line to position 539,80 for horizontal line y=80
+ctx.stroke(); // draws path 
+ctx.textAlign = "left"; // align text to the left
+ctx.textBaseline = "bottom"; // bottom text baseline value 
+/* 
+Fill text
+set at x=10 and y= 80
+orgin.
+*/
+ctx.fillText("For this text, textBaseline=\"bottom\" & y=80.", 10, 80 );
+
+/********************** Middle Text Baseline **************************/
+/***********************************************************************/
+
+ctx.moveTo(1,120); // move position 1,120 for horizontal line y=120
+ctx.lineTo(539,120);// creates line to position 539,120 for horizontal line y=120
+ctx.stroke(); // draws path
+ctx.textAlign = "left"; // align text to the left
+ctx.textBaseline = "middle"; // middle text baseline value
+/* 
+Fill text
+set at x=10 and y= 120
+orgin.
+*/
+ctx.fillText("For this text, textBaseline=\"middle\" & y=120.", 10, 120 );
+
+/********************** Top Text Baseline **************************/
+/***********************************************************************/
+
+ctx.moveTo(1,160); // move position 1,160 for horizontal line y=160
+ctx.lineTo(539,160); // creates line to position 539,160 for horizontal line y=160
+ctx.stroke(); // draws path 
+ctx.textAlign = "left"; // align text to the left
+ctx.textBaseline = "top"; // top text baseline value
+/* 
+Fill text
+set at x=10 and y= 160
+orgin.
+*/
+ctx.fillText("For this text, textBaseline=\"top\" & y=160.", 10, 160 ); 
+</script>
+</body>
+</html>

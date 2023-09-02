@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: beige">
+<!-- Main Header --> 
+<h1> Implementing Canvas in JavaScript</h1>
+<!-- Translate Method --> 
+<h2> The translate() method</h2> 
+<!--
+Uses canvas element to
+to graphics on to the
+webpage. Canvas is 
+only a container for
+graphics.
+-->
+<canvas id="myTranslate" width="300" height="150" style="border:1px solid black;">
+<!--
+Outputs message if
+canvas is not supported
+by web browser.
+--> 
+Your browser does not support the HTML5 canvas tag.</canvas>
+<!-- JavaScript -->
+<script>
+/* 
+grabs myTranslate from
+id attribute canvas element
+*/
+  var a = document.getElementById("myTranslate"); 
+  var aoc = a.getContext("2d"); // Gets 2 dimensional rendering context for variable a or drawn canvas
+// draws rectangle
+  aoc.fillRect(10, 10, 100, 50); // draws a filled 100 * 50 rectangle set at (10,10) orgin
+  aoc.translate(70, 70); // sets new position to (70,70) orgin after remapping from (0,0)
+  aoc.fillRect(10, 10, 100, 50); // draws a filled 100 * 50 rectangle set at (10,10) orgin
+</script> 
+<!-- Line breaks -->
+<br>
+<br>
+<figure> 
+<!-- Adds figure caption to canvas object -->
+    <figcaption>
+        <strong>Note:</strong> This example draws a rectangle in position <br>
+        (10,10), set new (0,0) position to (70,70). Draw <br>
+         same rectangle again (notice that the rectangle <br>
+         now starts in position (80,80).
+    </figcaption>
+<!-- Rotate Method --> 
+<h2>The rotate() method</h2> 
+<!--
+Uses canvas element to
+to graphics on to the
+webpage. Canvas is 
+only a container for
+graphics.
+--> 
+<canvas id="myRotate" width="300" height="150" style="border:1px solid black;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<!--
+Outputs message if
+canvas is not supported
+by web browser.
+--> 
+<script>
+/* 
+grabs myRotate from
+id attribute canvas element
+*/
+  var d = document.getElementById("myRotate");
+  var doc = d.getContext("2d"); // Gets 2 dimensional rendering context for variable d or drawn canvas
+/* 
+Caculates from degrees to radians
+using (degrees*Math.PI/180).
+Rotates 20 degrees using
+(20*Math.PI/180).
+*/
+  doc.rotate(20 * Math.PI / 180); // rotates drawn rectangle 20 degrees.
+// draws rectangle
+  doc.fillRect(50, 20, 100, 50); // draws a filled 100 * 50 rectangle set at (10,10) orgin
+</script> 
+<!-- Line breaks -->
+<br> 
+<br>
+<figure> 
+<!-- Adds figure caption to canvas object -->
+    <figcaption>
+        <strong>Note:</strong> This example takes the current drawn <br> 
+        rectangle in position (50,20), (100,50) set new <br>
+        (0,0) position to a rotated 20&deg;.<br>
+    </figcaption> 
+</body>
+</html>
