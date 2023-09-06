@@ -1,3 +1,8 @@
+# Willie Conway
+# The Guessing Game
+# Coding with Python 101
+
+
 # Imports the random number class
 import random
 
