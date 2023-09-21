@@ -1,0 +1,44 @@
+// package is a series of classes.
+package com.practice;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // If Statments
+        // If statments are used with any boolean expression
+
+        int age = 15;
+        if (age >= 18) {
+            System.out.println("Hooray...I am a adult");
+
+        // If else
+        } else {
+            System.out.println(" I am not an adult.");
+
+        }
+
+
+        if (!(age >= 18)) {
+            System.out.println("Hooray...I am a adult");
+
+        // else if
+        } else if (age >= 16 && age < 18) {
+            System.out.println("I am almost a adult");
+
+        }
+
+
+        /*
+        If statements allows you to execute certain
+        sections of your code depending on the boolean
+         expression
+         */
+
+    }
+}
+
+Output:
+
+ I am not an adult.
+Hooray...I am a adult

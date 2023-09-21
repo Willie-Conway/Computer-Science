@@ -1,0 +1,69 @@
+package com.practice;
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+       // byte can store whole numbers.
+
+        byte theByte = -128;
+
+        // short can store 5 digits
+
+        short theShort = 8_989;
+
+        // int can store 10 digits
+
+        int theInt = 789_900_792;
+
+        // long can store 19 digits
+
+        long theLong = 789_763_567L;
+
+        // float can  store 6 to 7 digits
+
+        // use capital F or f after numerical value
+
+        float pi = 3.14F;
+
+        // double can store 15 decimal digits
+
+        double doublePi = 3.1415;
+
+        // boolean can store true or false
+
+        boolean isAdult = true;
+
+        // char  can store characters
+
+        char nameInitial = 'A';
+
+
+        //Print variable names
+
+        System.out.println(theByte);
+        System.out.println(theShort);
+        System.out.println(theInt);
+        System.out.println(pi);
+        System.out.println(doublePi);
+        System.out.println(isAdult);
+        System.out.println(nameInitial);
+        System.out.println(theLong);
+
+    }
+}
+
+Output:
+
+-128
+8989
+789900792
+3.14
+3.1415
+true
+A
+789763567
+
+

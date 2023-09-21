@@ -1,0 +1,30 @@
+// package is a series of classes.
+package com.practice;
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        //Break and Continue
+        String[] names = {"Anna", "Ali", "Bob", "Mike"};
+        // for loops String names array
+        for (String name : names) {
+            // startsWith() method retrieves all values that start with "A"
+            if (name.startsWith("A")) {
+
+                // if (name.equals("Bob")) {
+                continue; // loop continues never executes after
+            }
+
+            System.out.println(name);
+            //break;
+
+        }
+    }
+}
+
+Output:
+
+Bob
+Mike

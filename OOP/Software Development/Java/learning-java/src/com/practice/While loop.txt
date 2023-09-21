@@ -1,0 +1,46 @@
+// package is a series of classes.
+package com.practice;
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        // While loop
+        // count is set as a variable define by the value 20
+        int count = 1;
+
+        // While loop loops 20 times while returning the count of elements.
+        // boolean statement determines is count value is greater or equal to 20
+        // If statement is true while loop will loop 20 times.
+        // while loop is a control flow statement
+        while(count <= 20) {
+            System.out.println("count" + count);
+            count ++;
+        }
+
+    }
+}
+
+Output:
+
+count1
+count2
+count3
+count4
+count5
+count6
+count7
+count8
+count9
+count10
+count11
+count12
+count13
+count14
+count15
+count16
+count17
+count18
+count19
+count20

@@ -1,0 +1,49 @@
+// package is a series of classes.
+package com.practice;
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Arrays
+
+        // Integer Array
+        // Sizes of arrays are fixed and set.
+         int [] numbers ={2, 0, 1, 4, 100, 4, 90, 78}; // Index order {0, 1, 2, 3, 4}
+
+        /* Integer defines variable oneHundered
+           and sequences for 4th index in the numbers
+           array.
+         */
+         int oneHundered = numbers [4];
+
+         /* Integer defines variable four
+            and sequences for 3rd index in the
+            numbers array.
+          */
+
+         //int four = numbers[3];
+
+        /*
+        Generates the numbers array
+        length and retrieves the reverse
+        second element  in numbers array
+         {-8, -7, -6, -5, -4, -3, -2, -1}
+         */
+         int four = numbers[numbers.length -1];
+
+         // System print line of variable oneHundred.
+         System.out.println(oneHundered);
+
+         // System prints line of variable four.
+         System.out.println(four);
+
+    }
+}
+
+Output:
+
+100
+78

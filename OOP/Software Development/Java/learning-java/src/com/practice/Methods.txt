@@ -1,0 +1,34 @@
+// package is a series of classes.
+package com.practice;
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Methods
+        /*
+         are a block of code that only
+        runs when it's called. you can pass data
+        into a method, this is known as parameters.
+        In a nutshell methods are used to form any logic.
+        Any piece of code that does something
+        */
+        // prints Hello parameter
+        System.out.println("Hello"); // parentheses invokes methods
+        String brand = "Samsung";
+        System.out.println(brand.toUpperCase());
+        boolean starsWithS = brand.startsWith("S");
+        boolean startsWithS = brand.endsWith("g");
+        System.out.println(startsWithS);
+
+
+
+    }
+}
+
+Output:
+
+Hello
+SAMSUNG
+true

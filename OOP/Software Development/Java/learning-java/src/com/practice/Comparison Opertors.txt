@@ -1,0 +1,42 @@
+// package is a series of classes.
+package com.practice;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Comparison Operators
+
+        int KhalidAge = 20;
+        int mariamAge = 20;
+
+        // Boolean expressions
+        // Only returns true or false
+        
+        System.out.println(KhalidAge > mariamAge);
+        System.out.println(KhalidAge < mariamAge);
+        System.out.println(KhalidAge == mariamAge);
+        
+        
+        System.out.println(KhalidAge != mariamAge);
+        System.out.println(KhalidAge <= mariamAge);
+        System.out.println(KhalidAge >= mariamAge);
+        System.out.println(mariamAge > KhalidAge);
+
+
+
+
+
+
+
+
+    }
+}
+
+Output:
+
+false
+false
+true
+false
+false

@@ -1,0 +1,163 @@
+Java Study Questions 
+---------------------------------------------------------------------------------------------------
+
+Week 1 Study Questions & Challenges
+
+---------------------------------------------------------------------------------------------------
+
+
+Week 1 - Java Fundamentals
+
+
+| TOPICS |
+
+Unix/Linux
+Git
+OOP
+Java
+SDLC
+Diagramming
+Data Structures and Algorithms
+Testing
+
+---------------------------------------------------------------------------------------------------
+Monday
+---------------------------------------------------------------------------------------------------
+Try solving these challanges and researching the answers to the questions below:
+
+
+⭐ Try this Hackerrank Contest here.
+
+⭐ Build a console-based Grading Calculator App
+
+What is Java and why is it so great?
+
+What is JRE / JDK / JVM?
+
+How is Java code compiled and executed? In otherwords, explain src code --> byte code --> Target machine's JVM
+
+Here is a great resource and example.
+What are some useful features in Java 8 (It's ok if you list them with a brief conceptual overview).
+
+What are the 8 primitive datatypes in Java?
+
+What is an object? What is a class?
+
+What is a wrapper class?
+
+What is autoboxing / unboxing?
+
+What is casting? Can you explain the difference between widening and narrowing?
+
+Tell me the full syntax of the main method. What is its purpose?
+
+---------------------------------------------------------------------------------------------------
+
+Tuesday
+---------------------------------------------------------------------------------------------------
+
+What are the 4 pillars of Object Oriented Programming (OOP)?
+
+What does the static non-access modifier mean?
+
+Describe Encapsulation.
+
+Describe Inheritance.
+
+What is a constructor?
+
+What is the difference between object scope and class scope?
+
+Describe all of the access modifiers.
+
+What does it mean to @Override a method?
+
+----------------------------------------------------------------------------------------------------
+
+Wednesday
+----------------------------------------------------------------------------------------------------
+
+⭐ Try this HackerRank Challenge to practice Exception Handling
+
+What's the difference between and Error and an Exception?
+
+What's the difference between a Checked and Unchecked Exception?
+
+What's the difference between Throwable, throws, and throw. Resource here
+
+What is Abstraction?
+
+Can you instantiate an Abstract Class? What about an Interface?
+
+---------------------------------------------------------------------------------------------------
+
+Thursday
+---------------------------------------------------------------------------------------------------
+
+When do you use ArrayList instead of LinkedList?
+
+Great resource here
+What is the Collections API?
+
+How does Collections" differ from Collection? Check here
+How does Map Interface relate to the Collection Framework? (Does it extend java.util.Collection?)
+What are the interfaces in the Collections API?
+
+List
+Set
+Queue
+Dequeue
+
+What is the difference between a Set and a List?
+
+What is the difference between a Array and an ArrayList?
+
+What is the difference between ArrayList and Vector?
+
+Vector is synchronized whereas ArrayList is not.
+Great resource on Collecetions here 👈
+
+Binary Search resource here 👈
+
+----------------------------------------------------------------------------------------------------
+
+Friday
+---------------------------------------------------------------------------------------------------
+
+What are these principles of OOP?
+
+- DRY
+- Single Responsibility
+- Open / Closed
+- Liskov Substitution
+- Interface Segregation
+- Dependency Inversion
+- What are SDLC Retrospectives?
+
+What is a Generic?
+
+What is Subtyping?
+How do you use Generics in a method?
+What is are Annotations?
+
+How do you create a custom annotation?
+What is a Stack?
+
+What makes a stack different to a List?
+How do interact with a Stack in Java?
+Describe the Stack and the Heap?
+
+Is Java a Pass by Value or Pass by Reference?
+
+Describe is Class Loading?
+
+What is the Garbage Collector?
+
+Can you force the Garbage Collector to do things?
+What type of thread is the Garbage Collector?
+What is JUnit? What do we use it for?
+
+What is Mocking? How do we mock in Java?
+
+--------------------------------------------------------------------------------------------------
+

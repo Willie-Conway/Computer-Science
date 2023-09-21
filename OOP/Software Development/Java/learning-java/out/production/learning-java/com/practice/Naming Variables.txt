@@ -1,0 +1,25 @@
+package com.practice;
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Varaiable names corresponds to the value
+        int zero = 0;
+        int one = 1;
+        double pi = 2.1415;
+        /* always use camelcase words when
+        *  naming variables. Variables should
+        *  start with lowercase,
+        *  if you have a second word, then
+        *  Uppercase. 
+        *  (Make sure name means something and apply
+        *  CamelCase for your variables.)
+        * */
+        int SubscriberCount = 1_000_000;
+
+
+    }
+}

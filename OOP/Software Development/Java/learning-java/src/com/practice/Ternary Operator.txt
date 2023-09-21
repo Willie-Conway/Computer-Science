@@ -1,0 +1,53 @@
+// package is a series of classes.
+package com.practice;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Ternary operator
+        /*
+        Ternary operators should be used when you want to
+        return a value.
+        */
+
+        int age = 17;
+        String message = age >= 18 ? "Hooray...Im a adult" :
+                "I am not an adult";
+        System.out.println(message);
+
+        if (age >= 18) {
+            System.out.println("Hooray...I am a adult");
+
+        // If else
+        } else {
+            System.out.println(" I am not an adult.");
+
+        }
+
+
+        if (!(age >= 16)) {
+            System.out.println("Hooray...I am a big kid");
+
+        // else if
+        } else if (age >= 16 && age < 18) {
+            System.out.println("I am almost a adult");
+
+        }
+
+
+        /*
+        If statements allows you to execute certain
+        sections of your code depending on the boolean
+         expression
+         */
+
+    }
+}
+
+Output:
+
+I am not an adult
+ I am not an adult.
+I am almost a adult
+

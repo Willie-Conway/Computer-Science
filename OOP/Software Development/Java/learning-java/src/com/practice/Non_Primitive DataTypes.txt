@@ -1,0 +1,36 @@
+package com.practice;
+
+// import java LocalDate class
+import java.time.LocalDate;
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+       // Non primitive data types AKA reference types
+        String name = new String("Practice");
+       /*
+       System prints new string variable name in Uppercase letters
+       using toUpperCase() method.
+       */
+        System.out.println(name.toUpperCase());
+        /*
+        LocalDate reference type defines variable
+        now as LocalDate.now() method as a value;
+          */
+        LocalDate now = LocalDate.now();
+        /*
+        System prints line for variable now to get current month
+        */
+        System.out.println(now.getMonth());
+
+
+
+    }
+}
+
+
+Output:
+
+PRACTICE
+AUGUST
+

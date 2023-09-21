@@ -1,0 +1,72 @@
+// package is a series of classes.
+package com.practice;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Logical Operators
+        // Boolean expressions determine true or false
+
+        boolean isAdult = false;
+        boolean isStudent = false;
+        boolean Practice = true;
+
+        /*
+        System prints line to determine if all
+        boolean expressions is true using the && (AND) operator.
+        If not then system will print false into console.
+         */
+
+        System.out.println(isAdult && isStudent);
+
+         /*
+        System prints line to determine if either
+        boolean expressions is true or false using the || (OR) operator.
+        If not then system will print false into console.
+         */
+
+        System.out.println((isAdult || isStudent));
+
+         /*
+        System prints line to determine if all
+        boolean expressions is true or false using the || (OR) and
+        && (AND) operator to determine if all expressions is true.
+        If not then system will print false into console.
+         */
+
+        System.out.println((isAdult || isStudent) && Practice);
+
+        /*
+        System prints line to determine if all
+        boolean expressions is true or false using the || (OR) and
+        && (AND) operator to determine if all expressions is true.
+        If not then system will print false into console. Flips value
+         with ! (NOT) of isAdult variable.
+         */
+
+        System.out.println((!isAdult || isStudent) && Practice);
+        System.out.println((!isAdult || isStudent) && !Practice);
+        System.out.println(isAdult == true);
+        System.out.println(isAdult);
+        System.out.println(!isAdult);
+        String name = "Mark";
+        System.out.println(10 > 8 || 2 <= 2
+                && isAdult && name.contains("M"));
+
+
+
+
+    }
+}
+
+Output:
+
+false
+false
+true
+false
+false
+false
+true
+true

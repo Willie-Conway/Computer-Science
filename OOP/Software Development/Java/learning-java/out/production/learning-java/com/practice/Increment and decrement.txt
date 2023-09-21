@@ -1,0 +1,66 @@
+// package is a series of classes.
+package com.practice;
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Loops
+
+        // Increments (i ++) and decrements (--i)
+
+        // Integer Array
+        // Sizes of arrays are fixed and set.
+         int [] numbers ={2, 0, 1, 4, 100, 4, 90, 78, 77}; // Index order {0, 1, 2, 3, 4}
+
+        /*
+
+         int number = 3; // takes current number of value
+         number += 5; // increments the number by one
+         number = number + 1; // increments by 2
+         number++; // increases (increment) number value by 1.
+         number --; // decreases (decrements) number value by 1.
+
+        System.out.println(number); // system prints out number value.
+
+        */
+
+        /*
+          for loop control flow statement iterates
+          and defines int value 0 as i. Iterates boolean
+          statement if 0 is less than the numbers
+          length, and  increment (++1). If boolean
+          statement is true, for loop
+          will iterate the numbers array once.
+        */
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+
+
+        /*int number = 0;
+        number = number +1;
+        System.out.println(number);
+        */
+
+
+        // reverse order
+        /*for (int i = numbers.length -1; i >= 0; i--) {
+            System.out.println(numbers[i]);
+        } */
+    }
+}
+
+Output:
+
+
+1
+4
+100
+4
+90
+78
+77
+

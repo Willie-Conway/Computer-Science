@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        //  Do While loop
+        // count is set as a variable define by the value 20
+        int count = 21;
+        
+        // Executes code at least once.
+
+        do {
+            System.out.println(count);
+            count++;
+        }
+
+        // While loop loops 20 times while returning the count of elements.
+        // boolean statement determines is count value is greater or equal to 20
+        // If statement is true while loop will loop 20 times.
+        // while loop is a control flow statement
+        while(count <= 20) ;
+
+        while(true) {
+
+        }
+
+    }
+
+}
+
+Output:
+
+21

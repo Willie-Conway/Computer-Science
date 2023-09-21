@@ -1,0 +1,41 @@
+package com.practice;
+
+// import java Date class
+import java.util.Date; 
+
+public class Main {
+    public static void main(String[] args) {
+        /*
+        * Primitive data type
+        * are numbers and characters.
+        * they are built in and predefined.
+        * */
+        
+        /* Primitive */
+        // double and integer data type
+        
+        double number = 100.01;
+        int zero = 0;
+
+
+        /*
+         * Non - Primitive data type
+         * are built and defined by
+         * the programmer and provide
+         * a sequence of integers or 
+         * characters.
+         * */
+        
+        /* Non - Primitive */
+        
+        // data type String 
+        String brand = "Practice";
+        
+        // date class reference  data type
+        Date date = new Date();
+                
+
+
+
+    }
+}

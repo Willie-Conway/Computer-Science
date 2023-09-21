@@ -1,0 +1,60 @@
+// package is a series of classes.
+package com.practice;
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Loops
+
+        // Increments (i ++) and decrements (--i)
+
+        // Integer Array
+        // Sizes of arrays are fixed and set.
+         int [] numbers ={2, 0, 1, 4, 100, 4, 90, 78, 77}; // Index order {0, 1, 2, 3, 4}
+         String [] names = {"Anna", "Ali"};
+
+         // Bonus Tip
+
+        // numbers.for
+
+        // Advanced Array
+
+        Arrays.stream(numbers).forEach(System.out::println);
+        Arrays.stream(names).forEach(System.out::println);
+
+        //for loop
+
+        for (int i = 0; i < numbers.length; i++) {
+
+        }
+
+        // reverse for loop
+
+        for (int i = numbers.length - 1; i >= 0; i--) {
+
+        }
+
+        // String for loop
+
+        for (String name : names) {
+
+        }
+    }
+}
+
+Output:
+
+2
+0
+1
+4
+100
+4
+90
+78
+77
+Anna
+Ali

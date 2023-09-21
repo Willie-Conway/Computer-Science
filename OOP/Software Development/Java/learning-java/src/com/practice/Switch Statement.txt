@@ -1,0 +1,72 @@
+// package is a series of classes.
+package com.practice;
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Switch Statement
+        // Switch statements should be used only for single values
+        // Switch just appears much neater than a if statement.
+
+        // String class stores variable gender as "FEMALE."
+        // String gender = "female";
+       //  String gender = "FEMALE";
+         String gender = "da";
+
+        // If statements check if gender equals female
+        if (gender.equals("FEMALE")) {
+
+            // else if gender equals "MALE."
+
+        } else if (gender.equals("MALE")) {
+
+            // else if gender "PREFER_NOT_SAY."
+        } else if (gender.equals("PREFER_NOT_SAY")) {
+
+        }else {
+
+        }
+
+        /*
+        Switches gender value and sequence through case
+        by case to check if gender is "FEMALE", "MALE",
+        "PREFER_NOT_SAY".*/
+
+        switch (gender.toUpperCase()) {
+
+        //switch (gender) {
+            case "FEMALE":
+                System.out.println("I am a female. ");
+                /*
+                breaks between each switch to check
+                if statement is true or false before
+                executing print line method or moving
+                to the next case.
+                */
+                break;
+            case "MALE":
+                System.out.println("I am a male.");
+                break;
+            case "PREFER_NOT_SAY":
+                System.out.println("prefer not to say");
+                break;
+
+                /*
+                If all cases appear false from the if statement
+                the switch statement will print the default case.
+                */
+
+            default:
+                System.out.println("Unknown gender");
+
+        }
+
+
+    }
+}
+
+
+Output:
+
+Unknown gender

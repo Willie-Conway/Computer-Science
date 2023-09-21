@@ -1,0 +1,80 @@
+package com.practice;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+// Primitive types
+public class Main {
+    public static void main(String[] args) {
+        // data type integer define variable a as value 10
+        int a =10;
+
+        // data type integer defines variable b and copies variable a
+        /* this means the variable b is untouched
+        *  and created in another different memory address.
+        * */
+        int b = a;
+        // variable a is redefined as value 100
+        a = 100;
+        System.out.println("a = " + a + " - b = " + b);
+        System.out.println("value = " + (a - b));
+
+        /* Person class creates and defines new
+        *  person method and passes alex in the method.
+        *
+        * */
+        Person alex =  new Person("alex");
+
+        /*
+        * Person alex stored in a memory address as object
+        * and is a reference to the object. Miriam is a reference
+        * type that's equal to alex. so instead of pointing directly
+        * to alex, this will simply point to the memory address/ object used to
+        * create reference alex.
+        * */
+        Person mariam = alex;
+
+        // Both alex and mariam are pointing towards the intial object
+        System.out.println("before changing alex");
+        System.out.println(alex.name + " " + mariam.name);
+        /* data type/object alex defines variable name as
+        * Alexander.
+        *
+        *  */
+        mariam.name = "Mariam";
+
+        System.out.println("after changing alex");
+        System.out.println(alex.name + " " + mariam.name);
+
+    }
+// Reference types
+    /*
+    *  Non-access modifier/ Keyword static is being uses to allow
+    *  methods / attributes to be accessed without creating an object
+    *  class.
+    *  class Person is created
+    * */
+    static class Person {
+        // reference type string defines variable name
+        String name;
+        // Person method defines the string name
+        Person(String name){
+
+            /* this keyword is used to tell
+             * this current object in a method or
+             * constructor that variable name is
+             * defined as name.
+             * */
+            this.name = name;
+        }
+    }
+}
+
+Output:
+
+a = 100 - b = 10
+value = 90
+before changing alex
+alex alex
+after changing alex
+Mariam Mariam

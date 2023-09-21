@@ -1,0 +1,49 @@
+--------------
+Java Keywords
+--------------
+
+
+
+
+ Keywords in Java are something that
+ has got a special meaning. It is a
+ predefined word which has special meaning
+ in Java and these words cannot be used
+ as object reference, variables, or data member.
+
+-------------------------------------------------
+
+ Example: If we want to store a numeric data,
+ we use a keyword called “int” If we want to store 
+ a character value, we use char keyword. If we want
+ to store a decimal value, we use either float or
+ double keyword.
+
+ Total numbers of keywords in java
+ We have a total of 53 keywords in java.
+ In which, 3 are literals or constant value
+ such as true, false, and null. And on the
+ remaining 50, we don’t use 2 keywords in
+ java ( goto and const).
+
+(true, false, null.)
+
+The list of 48 keywords is as follows.
+
+-------------------------------------------------
+
+abstract	continue	for		new		switch
+assert***	default	goto*		package	synchronized
+boolean	do		if		private	this
+break		double	implements	protected	throw
+byte		else		import	public	throws
+case		enum****	instanceof	return	transient
+catch		extends	int		short		try
+char		final		interface	static	void
+class		finally	long		strictfp**	volatile
+const*	float		native	super		while
+
+*	 	not used
+**	 	added in 1.2
+***	 	added in 1.4
+****	 	added in 5.0

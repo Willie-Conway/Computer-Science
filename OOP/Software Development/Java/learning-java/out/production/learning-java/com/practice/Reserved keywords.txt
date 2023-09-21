@@ -1,0 +1,17 @@
+// package is a series of classes.
+package com.practice;
+
+// The java main () method  consist 4 of reserved keywords
+/*
+public
+class
+void
+static
+*/
+public class Main {
+    public static void main(String[] args) {
+        int number  = 0;
+
+
+    }
+}

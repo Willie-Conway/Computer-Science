@@ -1,0 +1,129 @@
+Difference between char and String
+
+------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args) {
+
+        //  char data type only allows for one single value.
+        char a = 'A';
+        char b = 'B';
+        // String allows a sequence of characters.
+        String name = new String("Practice");
+
+
+
+    }
+}
+
+-----------------------------------------------------------------------------
+
+package com.practice;
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+       // String is a series of characters.
+       // String is the actual reference data type.
+
+       /*
+       If a data type starts with a capital
+       letter it is a class you can invoke with methods
+        */
+
+        /*
+        String class defines variable name
+        creates new String method name Practice
+        */
+
+        // name is now an object or creates a new instance
+        // then you can invoke the methods in side of the object.
+        // You can drop new String with the braces to define.
+
+        String name = "Practice";
+
+        /*
+        System prints line variable name "Practice"
+        into the console.
+         */
+
+        System.out.println(name);
+
+        /*
+        System prints line variable name "PRACTICE"
+        in caps using toUpperCase method into the console.
+         */
+
+        /*
+        (name.toUpperCase()) is defined as a behavior,
+        But is classified as a method.
+         */
+
+        /*
+        The behavior or operations of an object are
+        its predefined functions. For example,
+        a T.V. can show picture , change channels, tune for a
+        channel etc. in object-oriented programming terminology
+        the behavior is implemented through methods. */
+
+        System.out.println(name.toUpperCase());
+
+        /*
+        System prints line variable name "practice"
+        in lowercase using toLowerCase method into the console.
+         */
+
+        System.out.println(name.toLowerCase());
+
+        /*
+        System prints line variable name, retrieves
+         index position 0 of characters "Practice"
+        using charAt() method into the console.
+         */
+
+        System.out.println(name.charAt(0));
+
+        /*
+        System prints line variable tice and
+        creates a new String method to define
+        variable tice as value tice.
+         */
+
+        String tice = "tice";
+
+        /*
+        System prints line variable name and
+        attaches the contains() method to
+        returns true if and only if this string
+        contains the specified sequence of char
+        values. If not it will return false.
+         */
+
+        System.out.println(name.contains("tice"));
+
+        /*
+        System prints line variable name and
+        attaches the equals() method to
+        compares the string to the specified
+        object. The result is true if and only
+        if the argument is not null and is a String
+        object that represents the same sequence of
+        characters as this object.
+         */
+
+        System.out.println(name.equals("tice"));
+
+
+    }
+}
+
+Output:
+
+Practice
+PRACTICE
+practice
+P
+true
+false
